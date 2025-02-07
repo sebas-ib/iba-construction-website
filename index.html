@@ -14,7 +14,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -22,13 +22,14 @@
     <nav id="hamburger-nav">
       <div class="logo">IBA Construction</div>
       <div class="hamburger-menu">
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
         <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
           <span></span>
           <span></span>
           <span></span>
@@ -36,78 +37,87 @@
       </div>
     </nav>
 
+    <section id="home">
+      <div class="home-page">
+        <img src="assets/kitchen.jpg" alt="Remodeled kitchen" />
+        <div class="title-card">
+          <h1 class="header">Transform Your Space</h1>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
-      <p>About</p>
+      <div class="section-box">
+        <h1 class="header">About</h1>
+        <div class="about-section">
+          <p>
+            At IBA Construction, we specialize in transforming kitchens,
+            bathrooms, and interiors into beautiful, functional spaces that
+            you’ll love. With a commitment to craftsmanship, innovation, and
+            attention to detail, we bring your vision to life—whether it’s a
+            modern, sleek kitchen, a luxurious spa-like bathroom, or a complete
+            home renovation. With years of experience in the industry, our
+            skilled team of designers, builders, and project managers work
+            closely with you to ensure every detail meets your expectations. We
+            take pride in using high-quality materials, efficient construction
+            methods, and tailored solutions that suit your lifestyle and budget.
+          </p>
+          <div class="about-image">
+            <img src="assets/bathroom.jpg" alt="Remodeled bathroom" />
+          </div>
+        </div>
+      </div>
     </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
     <section id="services">
-      <p>Services</p>
+      <div class="section-box">
+        <h1 class="header">Our Services</h1>
+      </div>
     </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <section id="projects">
-      <p>Projects</p>
-    </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
     <section id="contact">
-      <p>Contact</p>
+      <div class="section-box">
+        <div class="contact-container">
+          <div class="contact-left">
+            <h1 class="header">Contact Us</h1>
+            <p>Send us an email, and we will get back to you shortly.</p>
+          </div>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-right"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="eb04500e-9a41-4fc5-95f6-8d97728408d3"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              class="contact-inputs"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="contact-inputs"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
 
     <script src="script.js"></script>
   </body>
