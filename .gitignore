@@ -1,7 +1,7 @@
 assets/*
 !assets/.gitkeep
 !assets/home_image.jpg
-!assets/living_room.jpg
+!assets/about_image.jpg
 !assets/new_construction.jpg
 !assets/renovation_image.jpg
 
