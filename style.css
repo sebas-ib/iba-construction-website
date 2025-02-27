@@ -146,6 +146,10 @@ a:hover {
   text-align: center;
 }
 
+.title-card h1 {
+  padding-bottom: 0vh;
+}
+
 /* Services Section */
 #services {
   background: #f9f9f9;
@@ -168,7 +172,6 @@ a:hover {
 .service-item {
   position: relative;
   height: 500px;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -181,6 +184,13 @@ a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.service-item h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  z-index: 3;
+}
+
 .service-item::before {
   content: "";
   position: absolute;
@@ -188,18 +198,15 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   border-radius: 12px;
 }
 
-.service-item h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .service-item p {
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   max-width: 80%;
+  z-index: 3;
 }
 
 .service-item:hover {
