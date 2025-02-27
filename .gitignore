@@ -1,4 +1,5 @@
 assets/*
 !assets/.gitkeep
+!assets/home_image.JPG
 
 .DS_Store
