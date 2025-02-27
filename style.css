@@ -232,7 +232,7 @@ a:hover {
 
 .contact-right {
   flex: 1.5;
-  max-width: 750px;
+  width: 750px;
   display: flex;
   flex-direction: column;
   gap: 10px;

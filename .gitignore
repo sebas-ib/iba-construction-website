@@ -1,5 +1,8 @@
 assets/*
 !assets/.gitkeep
-!assets/home_image.JPG
+!assets/home_image.jpg
+!assets/living_room.jpg
+!assets/new_construction.jpg
+!assets/renovation_image.jpg
 
 .DS_Store
