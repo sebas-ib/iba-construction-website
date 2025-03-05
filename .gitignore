@@ -1,8 +1,1 @@
-assets/*
-!assets/.gitkeep
-!assets/home_image.jpg
-!assets/about_image.jpg
-!assets/new_construction.jpg
-!assets/renovation_image.jpg
-
 .DS_Store
