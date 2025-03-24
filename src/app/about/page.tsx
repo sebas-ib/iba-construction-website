@@ -72,7 +72,7 @@ export default function About() {
               />
               <h4>Customer Satisfaction</h4>
               <p>
-                Our goal is to exceed our client's expectations in every
+                Our goal is to exceed our client&apos;s expectations in every
                 project.
               </p>
             </div>
@@ -84,8 +84,8 @@ export default function About() {
       <div className="contact-section">
         <h1>Contact Us</h1>
         <p>
-          Interested in working with us? We'd love to hear from you. Get in
-          touch with us today, and let's build something great together!
+          Interested in working with us? We&apos;d love to hear from you. Get in
+          touch with us today, and let&apos;s build something great together!
         </p>
         <div className="contact-button">
           <Link href="/contact">Get in Touch</Link>
