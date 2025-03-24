@@ -103,10 +103,10 @@ export default function Home() {
         <div className="area-right">
           <h1>Ready to Build With Us?</h1>
           <p>
-            Every great project starts with an idea. Whether you're building a
-            new home, expanding your space, or creating something entirely
-            unique, we're here to turn your vision into reality. Let's build
-            something incredible together.
+            Every great project starts with an idea. Whether you&apos;re
+            building a new home, expanding your space, or creating something
+            entirely unique, we&apos;re here to turn your vision into reality.
+            Let&apos;s build something incredible together.
           </p>
           <div className="contact-button">
             <Link href="/contact">Contact</Link>
