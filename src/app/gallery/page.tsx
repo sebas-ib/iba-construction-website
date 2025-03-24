@@ -1,12 +1,6 @@
 "use client";
 import "./gallery.css";
 
-const images = [
-  "/assets/house.jpg",
-  "/assets/new_construction.jpg",
-  "/assets/san-diego.jpg",
-];
-
 export default function Gallery() {
   return (
     <div className="main-container">
