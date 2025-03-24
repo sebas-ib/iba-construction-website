@@ -1,25 +1,110 @@
-import Image from "next/image";
+"use client";
+import "./gallery.css";
 
-export default function GalleryPage() {
+const images = [
+  "/assets/house.jpg",
+  "/assets/new_construction.jpg",
+  "/assets/san-diego.jpg",
+];
+
+export default function Gallery() {
   return (
-    <main className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">Project Gallery</h1>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-        <Image
-          src="/images/project1.jpg"
-          width={400}
-          height={300}
-          alt="Project 1"
-          className="rounded-lg"
+    <div className="main-container">
+      <div className="image-section">
+        <img
+          src="/home_image.webp"
+          alt="Remodeled kitchen"
+          className="big-image"
         />
-        <Image
-          src="/images/project2.jpg"
-          width={400}
-          height={300}
-          alt="Project 2"
-          className="rounded-lg"
-        />
+        <div className="bottom">
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+        </div>
       </div>
-    </main>
+      <div className="image-section">
+        <img
+          src="/home_image.webp"
+          alt="Remodeled kitchen"
+          className="big-image"
+        />
+        <div className="bottom">
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+        </div>
+      </div>
+      <div className="image-section">
+        <img
+          src="/home_image.webp"
+          alt="Remodeled kitchen"
+          className="big-image"
+        />
+        <div className="bottom">
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+        </div>
+      </div>
+      <div className="image-section">
+        <img
+          src="/home_image.webp"
+          alt="Remodeled kitchen"
+          className="big-image"
+        />
+        <div className="bottom">
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+        </div>
+      </div>
+      <div className="image-section">
+        <img
+          src="/home_image.webp"
+          alt="Remodeled kitchen"
+          className="big-image"
+        />
+        <div className="bottom">
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+          <img
+            src="/home_image.webp"
+            alt="Remodeled kitchen"
+            className="small-image"
+          />
+        </div>
+      </div>
+    </div>
   );
 }

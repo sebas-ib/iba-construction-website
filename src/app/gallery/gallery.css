@@ -1,0 +1,31 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.big-image {
+  width: 81.5%;
+  object-fit: cover;
+  height: 750px;
+}
+
+.bottom {
+  margin-top: 1.5%;
+  justify-content: center;
+  gap: 1.5%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5%;
+}
+
+.small-image {
+  width: 40%;
+  object-fit: cover;
+  height: 750px;
+}
