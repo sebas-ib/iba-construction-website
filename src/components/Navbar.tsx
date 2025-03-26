@@ -24,19 +24,19 @@ function Navbar() {
       {/* Desktop Navigation Links */}
       <ul className={`${styles.navLinks} ${styles.desktopNavLinks}`}>
         <li>
-          <Link href="/home">Home</Link>
+          <Link href="/home">HOME</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about">ABOUT</Link>
         </li>
         <li>
-          <Link href="/services">Services</Link>
+          <Link href="/services">SERVICES</Link>
         </li>
         <li>
-          <Link href="/gallery">Gallery</Link>
+          <Link href="/gallery">GALLERY</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">CONTACT</Link>
         </li>
       </ul>
 

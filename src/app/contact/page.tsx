@@ -1,4 +1,4 @@
-"use client"; // Required for event handling
+"use client";
 
 import { useState } from "react";
 
