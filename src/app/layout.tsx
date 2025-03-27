@@ -13,25 +13,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>IBA Construction</title>
-
-        <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
-        <link
-          rel="shortcut icon"
-          href="public/favicon.ico"
-          type="image/x-icon"
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "IBA Construction",
-              url: "https://www.iba-construction.com",
-            }),
-          }}
-        />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
       </head>
       <body>
         <Navbar />
