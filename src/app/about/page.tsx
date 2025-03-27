@@ -6,7 +6,7 @@ export default function About() {
     <div className="about">
       {/* Hero Section — as-is */}
       <div className="hero-section">
-        <img src="/about_image.webp" alt="Team working together" />
+        <img src="/assets/new_construction.jpg" alt="Team working together" />
 
         <div className="title-card">
           <h1 className="header">About Us</h1>

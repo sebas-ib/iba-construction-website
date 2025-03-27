@@ -198,4 +198,9 @@
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
   }
+
+  .title-card {
+    width: 90%;
+    padding: 20px;
+  }
 }

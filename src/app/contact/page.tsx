@@ -1,54 +1,73 @@
 "use client";
 
-import { useState } from "react";
+import { FC } from "react";
+import { useForm } from "react-hook-form";
+import { sendEmail } from "@/utils/send-email";
 
-export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+export type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-    alert("Message sent!");
+const Contact: FC = () => {
+  const { register, handleSubmit } = useForm<FormData>();
+
+  function onSubmit(data: FormData) {
+    sendEmail(data);
   }
 
   return (
-    <main className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">Contact Us</h1>
-      <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="mb-5">
+        <label
+          htmlFor="name"
+          className="mb-3 block text-base font-medium text-black"
+        >
+          Full Name
+        </label>
         <input
           type="text"
-          placeholder="Name"
-          required
-          className="border p-2 w-full"
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          placeholder="Full Name"
+          className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          {...register("name", { required: true })}
         />
+      </div>
+      <div className="mb-5">
+        <label
+          htmlFor="email"
+          className="mb-3 block text-base font-medium text-black"
+        >
+          Email Address
+        </label>
         <input
           type="email"
-          placeholder="Email"
-          required
-          className="border p-2 w-full"
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          placeholder="example@domain.com"
+          className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          {...register("email", { required: true })}
         />
+      </div>
+      <div className="mb-5">
+        <label
+          htmlFor="message"
+          className="mb-3 block text-base font-medium text-black"
+        >
+          Message
+        </label>
         <textarea
-          placeholder="Message"
-          required
-          className="border p-2 w-full"
-          onChange={(e) =>
-            setFormData({ ...formData, message: e.target.value })
-          }
+          rows={4}
+          placeholder="Type your message"
+          className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          {...register("message", { required: true })}
         ></textarea>
-        <button type="submit" className="bg-blue-600 text-white p-2">
-          Send
+      </div>
+      <div>
+        <button className="hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none">
+          Submit
         </button>
-      </form>
-    </main>
+      </div>
+    </form>
   );
-}
+};
+
+export default Contact;
