@@ -65,27 +65,27 @@ function Navbar() {
           >
             <li>
               <Link href="/home" onClick={toggleMenu}>
-                Home
+                HOME
               </Link>
             </li>
             <li>
               <Link href="/about" onClick={toggleMenu}>
-                About
+                ABOUT
               </Link>
             </li>
             <li>
               <Link href="/services" onClick={toggleMenu}>
-                Services
+                SERVICES
               </Link>
             </li>
             <li>
               <Link href="/gallery" onClick={toggleMenu}>
-                Gallery
+                GALLERY
               </Link>
             </li>
             <li>
               <Link href="/contact" onClick={toggleMenu}>
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>
