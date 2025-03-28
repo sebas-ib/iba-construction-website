@@ -22,18 +22,23 @@ export default function About() {
         <h4>Our Story</h4>
         <h1>Who We Are</h1>
         <div className="story-container">
-          <p>
-            IBA Construction started with a vision to deliver high-quality
-            construction services that make a difference. With years of
-            experience in the industry, we have earned a reputation for
-            precision and customer satisfaction. Our team is passionate about
-            bringing ideas to life and creating spaces that people love.
-          </p>
-          <img
-            src="/assets/new_construction.jpg"
-            alt="Our team working on a site"
-            className="section-image"
-          />
+          <div className="left-side">
+            {" "}
+            <p>
+              IBA Construction started with a vision to deliver high-quality
+              construction services that make a difference. With years of
+              experience in the industry, we have earned a reputation for
+              precision and customer satisfaction. Our team is passionate about
+              bringing ideas to life and creating spaces that people love.
+            </p>
+          </div>
+          <div className="right-side">
+            <img
+              src="/assets/new_construction.jpg"
+              alt="Our team working on a site"
+              className="section-image"
+            />
+          </div>
         </div>
       </div>
 

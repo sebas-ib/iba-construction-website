@@ -159,7 +159,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Responsive Design */
@@ -202,5 +202,31 @@
   .title-card {
     width: 90%;
     padding: 20px;
+  }
+
+  .build-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .build-section .area-left img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .build-section .area-right h1 {
+    font-size: 1.5rem;
+  }
+
+  .build-section .area-right p {
+    font-size: 1rem;
+  }
+
+  .build-section .contact-button a {
+    font-size: 1rem;
+    padding: 10px 16px;
   }
 }
