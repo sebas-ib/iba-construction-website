@@ -1,27 +1,67 @@
-form {
+.page {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 1000px; /* optional, keeps it readable on wide screens */
-  width: 100%;
+  /* border: 2px solid black; */
+  height: 70vh;
 }
 
-form div {
+.left-side {
+  padding-left: 5%;
+  text-align: left;
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+.left-side h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.left-side p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.left-side a {
+  color: #999;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.left-side a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.contact-form {
+  padding-right: 5%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+
+.contact-form div {
   width: 100%;
   margin-bottom: 16px;
 }
 
-label {
+.contact-form label {
   display: block;
   margin-bottom: 6px;
   font-weight: 300;
 }
 
-input,
-textarea {
-  width: 100%; /* 🔁 Fix here */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
   padding: 8px 12px;
   font-size: 14px;
   border: 1px solid white;
@@ -29,13 +69,19 @@ textarea {
   box-sizing: border-box;
 }
 
-textarea {
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.contact-form textarea {
   resize: vertical;
 }
 
-button {
+.contact-form button {
   background-color: white;
-  width: 100%; /* 🔁 Fix here */
+  width: 100%;
   padding: 10px 16px;
   color: #333;
   font-size: 1.5rem;
@@ -45,7 +91,39 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
+.contact-form button:hover {
   background-color: #333;
   color: white;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .left-side,
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-form {
+    padding-top: 20px;
+  }
 }

@@ -9,7 +9,12 @@ function Footer() {
         <div className={styles["footer-section"]}>
           <p>IBA Construction</p>
           {/* <p>1234 Main Street, San Diego, CA</p> */}
-          <p>(858) 527-8989 | ibaconstruction23@gmail.com</p>
+          <p>
+            <a href="tel:+8585278989">(858) 527-8989</a> |{" "}
+            <a href="mailto:ibaconstruction23@gmail.com">
+              ibaconstruction23@gmail.com
+            </a>
+          </p>
           <p>License #1092544</p>
         </div>
 

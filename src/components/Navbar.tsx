@@ -42,7 +42,7 @@ function Navbar() {
 
       <div className={styles.navRight}>
         <div className={styles.contactButton}>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">CONTACT</Link>
         </div>
 
         {/* Hamburger Menu */}
