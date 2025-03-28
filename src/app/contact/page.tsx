@@ -31,7 +31,7 @@ const Contact: FC = () => {
   return (
     <div className="page">
       <div className="left-side">
-        <h1>Let's Get in Touch</h1>
+        <h1>Let&apos;s Get in Touch</h1>
         <p>
           Whether you have a question or a project idea, feel free to drop a
           message. We will get back to you as soon as possible!
