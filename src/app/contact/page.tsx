@@ -36,12 +36,12 @@ const Contact: FC = () => {
           Whether you have a question or a project idea, feel free to drop a
           message. We will get back to you as soon as possible!
         </p>
-        <p>You can also reach us via email directly at</p>
-        <p>
-          <a href="mailto:ibaconstruction23@gmail.com">
-            ibaconstruction23@gmail.com
-          </a>
-        </p>
+        <p>You can also reach us via email directly at:</p>
+        {/* <p> */}
+        <a href="mailto:ibaconstruction23@gmail.com">
+          ibaconstruction23@gmail.com
+        </a>
+        {/* </p> */}
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
