@@ -52,9 +52,9 @@ function Footer() {
           © {new Date().getFullYear()} IBA Construction. All rights reserved.
         </p>
         <nav className={styles["nav-links"]}>
-          <a href="/privacy-policy">Privacy Policy</a>
+          <Link href="/privacy-policy">Privacy Policy</Link>
           <a>|</a>
-          <a href="/terms">Terms of Service</a>
+          <Link href="/terms">Terms of Service</Link>
         </nav>
       </div>
     </footer>

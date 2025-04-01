@@ -14,7 +14,7 @@ function Navbar() {
       <div className={styles.logo}>
         <Link href="/">
           <img
-            src="/assets/iba-logo-cropped.png"
+            src="/assets/icons/iba-logo-cropped.png"
             alt="Our team working on a site"
             className={`${styles.logoImage}`}
           />

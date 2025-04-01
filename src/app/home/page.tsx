@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="home">
       <div className="hero-section">
-        <img src="/home_image.webp" alt="Remodeled kitchen" />
+        <img src="/assets/pictures/living-room.jpg" alt="Living room" />
 
         <div className="title-card">
           <h1 className="header">Excellence in Every Build</h1>
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="service-container">
           <div className="service-item">
             <img
-              src="/assets/new_construction.jpg"
+              src="/assets/pictures/night-picture.jpg"
               alt="New Construction"
               className="service-img"
             />
@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="service-item">
             <img
-              src="/assets/new_construction.jpg"
+              src="/assets/pictures/remodeling.jpg"
               alt="Additions"
               className="service-img"
             />
@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className="service-item">
             <img
-              src="/assets/new_construction.jpg"
+              src="/assets/pictures/kitchen.jpg"
               alt="Remodeling"
               className="service-img"
             />
@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className="service-item">
             <img
-              src="/assets/new_construction.jpg"
+              src="/assets/pictures/water-damage.jpg"
               alt="Water Damage Repairs"
               className="service-img"
             />
@@ -84,7 +84,7 @@ export default function Home() {
 
         <div className="area-right">
           <img
-            src="/assets/san-diego.jpg"
+            src="/assets/pictures/san-diego.jpg"
             alt="san diego skyline"
             className="service-img"
           />
@@ -92,13 +92,13 @@ export default function Home() {
       </div>
 
       <div className="build-section">
-        <div className="area-left">
+        {/* <div className="area-left">
           <img
             src="/assets/house.jpg"
             alt="san diego skyline"
             className="service-img"
           />
-        </div>
+        </div> */}
 
         <div className="area-right">
           <h1>Ready to Build With Us?</h1>

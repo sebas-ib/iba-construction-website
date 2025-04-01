@@ -26,6 +26,7 @@
   transform: translate(-50%, -50%);
   width: 75%;
   background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
   padding: 50px;
   text-align: left;
 }
@@ -103,10 +104,11 @@
 .service-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .service-text p {
+  padding-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
@@ -121,8 +123,14 @@
 /* Contact CTA */
 .contact-section {
   text-align: center;
-  padding: 10vh 5vw;
+  padding: 5vh 10vw;
   background-color: rgb(245, 245, 245);
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
 }
 
 .contact-button a {
@@ -144,8 +152,10 @@
 /* Responsive */
 @media (max-width: 900px) {
   .service-block {
+    padding-top: 10%;
     flex-direction: column !important;
     text-align: center;
+    padding-bottom: 10%;
   }
 
   .service-text h2 {
@@ -156,9 +166,9 @@
     font-size: 1rem;
   }
 
-  .hero-section img {
+  /* .hero-section img {
     height: auto;
-  }
+  } */
 
   .title-card {
     width: 90%;

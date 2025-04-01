@@ -6,7 +6,10 @@ export default function About() {
     <div className="about">
       {/* Hero Section — as-is */}
       <div className="hero-section">
-        <img src="/assets/new_construction.jpg" alt="Team working together" />
+        <img
+          src="/assets/pictures/new_construction.jpg"
+          alt="Team working together"
+        />
 
         <div className="title-card">
           <h1 className="header">About Us</h1>
@@ -23,18 +26,20 @@ export default function About() {
         <h1>Who We Are</h1>
         <div className="story-container">
           <div className="left-side">
-            {" "}
             <p>
-              IBA Construction started with a vision to deliver high-quality
-              construction services that make a difference. With years of
-              experience in the industry, we have earned a reputation for
-              precision and customer satisfaction. Our team is passionate about
-              bringing ideas to life and creating spaces that people love.
+              IBA Construction was founded with a commitment to delivering
+              high-quality, dependable construction services that truly make a
+              difference. As a licensed general contractor, we bring years of
+              industry expertise to every project—earning a reputation for
+              precision, reliability, and client-focused service. Our team is
+              driven by a passion for turning visions into reality, building
+              functional and beautiful spaces that our clients are proud to call
+              their own.
             </p>
           </div>
           <div className="right-side">
             <img
-              src="/assets/new_construction.jpg"
+              src="/assets/pictures/new_construction.jpg"
               alt="Our team working on a site"
               className="section-image"
             />
@@ -50,7 +55,7 @@ export default function About() {
           <div className="values-container">
             <div className="value-item">
               <img
-                src="/assets/integrity.png"
+                src="/assets/icons/integrity.png"
                 alt="Integrity"
                 className="icon-image"
               />
@@ -59,7 +64,7 @@ export default function About() {
             </div>
             <div className="value-item">
               <img
-                src="/assets/quality.png"
+                src="/assets/icons/quality.png"
                 alt="Quality"
                 className="icon-image"
               />
@@ -71,7 +76,7 @@ export default function About() {
             </div>
             <div className="value-item">
               <img
-                src="/assets/satisfaction.png"
+                src="/assets/icons/satisfaction.png"
                 alt="Customer Satisfaction"
                 className="icon-image"
               />
