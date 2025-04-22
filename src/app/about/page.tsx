@@ -39,7 +39,7 @@ export default function About() {
           </div>
           <div className="right-side">
             <img
-              src="/assets/pictures/new_construction.jpg"
+              src="/assets/pictures/in-progress.jpeg"
               alt="Our team working on a site"
               className="section-image"
             />

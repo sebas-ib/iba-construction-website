@@ -43,7 +43,10 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/assets/new_construction.jpg" alt="New construction" />
+            <img
+              src="/assets/pictures/outdoor-painting.jpeg"
+              alt="New construction"
+            />
           </div>
         </div>
 
@@ -57,8 +60,8 @@ export default function Services() {
             <p>
               Need more room to grow? Our additions services are designed to
               blend seamlessly with your existing home while enhancing its
-              comfort and function. From extra bedrooms and expanded kitchens to
-              second-story builds and sunrooms, we manage everything—design,
+              comfort and function. From outdoor areas, extra bedrooms, expanded
+              kitchens to second-story builds, we manage everything—design,
               permits, and construction—with care and precision. We ensure the
               new space complements your home and adds long-term value.
             </p>
@@ -67,7 +70,10 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/assets/new_construction.jpg" alt="Home addition" />
+            <img
+              src="/assets/pictures/outdoor-pathway.jpeg"
+              alt="Home addition"
+            />
           </div>
         </div>
 
@@ -95,7 +101,10 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/assets/new_construction.jpg" alt="Remodeling" />
+            <img
+              src="/assets/pictures/outdoor-remodeling.jpeg"
+              alt="Remodeling"
+            />
           </div>
         </div>
 
