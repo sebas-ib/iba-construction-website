@@ -37,7 +37,7 @@ export default function TermsOfService() {
         <p>
           We strive to keep all information accurate and up to date, but we make
           no guarantees regarding the completeness or accuracy of content on
-          this website. All information is provided "as is."
+          this website. All information is provided &quot;as is.&quot;
         </p>
 
         <h3>5. Limitation of Liability</h3>
