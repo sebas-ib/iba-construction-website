@@ -6,10 +6,7 @@ export default function About() {
     <div className="about">
       {/* Hero Section — as-is */}
       <div className="hero-section">
-        <img
-          src="/assets/pictures/new_construction.jpg"
-          alt="Team working together"
-        />
+        <img src="/assets/pictures/" alt="" />
 
         <div className="title-card">
           <h1 className="header">About Us</h1>
@@ -38,11 +35,7 @@ export default function About() {
             </p>
           </div>
           <div className="right-side">
-            <img
-              src="/assets/pictures/in-progress.jpeg"
-              alt="Our team working on a site"
-              className="section-image"
-            />
+            <img src="/assets/pictures/" alt="" className="section-image" />
           </div>
         </div>
       </div>

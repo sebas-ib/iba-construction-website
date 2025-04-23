@@ -101,12 +101,18 @@
   padding: 5vh 10vw;
 }
 
-.area-section .area-left,
-.build-section .area-right {
+.area-section .area-left {
   flex: 1;
   min-width: 300px;
   max-width: 600px;
   text-align: left;
+}
+
+.build-section .area-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: auto;
+  text-align: center;
 }
 
 .area-section .area-right,
@@ -154,7 +160,6 @@
   background-color: rgb(125, 125, 125);
 }
 
-/* Image Scaling Fix */
 .area-right img,
 .build-section .area-left img {
   width: 100%;

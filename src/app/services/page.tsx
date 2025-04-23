@@ -44,7 +44,7 @@ export default function Services() {
           </div>
           <div className="service-image">
             <img
-              src="/assets/pictures/outdoor-painting.jpeg"
+              src="/assets/pictures/construction.jpg"
               alt="New construction"
             />
           </div>
@@ -70,10 +70,7 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img
-              src="/assets/pictures/outdoor-pathway.jpeg"
-              alt="Home addition"
-            />
+            <img src="/assets/pictures/living_room2.jpg" alt="Home addition" />
           </div>
         </div>
 
@@ -129,7 +126,7 @@ export default function Services() {
           </div>
           <div className="service-image">
             <img
-              src="/assets/new_construction.jpg"
+              src="/assets/pictures/water-damage.jpg"
               alt="Water damage repairs"
             />
           </div>

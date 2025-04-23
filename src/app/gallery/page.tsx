@@ -2,14 +2,6 @@
 import { useState } from "react";
 import "./gallery.css";
 
-const images = [
-  "/assets/pictures/living-room.jpg",
-  "/assets/pictures/night-picture.jpg",
-  "/assets/pictures/pp-home.jpg",
-  "/assets/pictures/remodeling.jpg",
-  "/assets/pictures/water-damage.jpg",
-];
-
 // Group images into sets of [big, small1, small2]
 function chunkImages(images: string[]) {
   const chunks = [];
@@ -19,28 +11,74 @@ function chunkImages(images: string[]) {
   return chunks;
 }
 
+// Categorized image data
+const categorizedImages: { [category: string]: string[] } = {
+  Kitchens: ["/assets/pictures/kitchen.jpg"],
+  Livingrooms: [
+    "/assets/pictures/living_room.jpg",
+    "/assets/pictures/living_room2.jpg",
+    "/assets/pictures/remodeling.jpg",
+  ],
+  Bathrooms: [
+    "/assets/pictures/bathroom.jpg",
+    "/assets/pictures/bathroom2.jpg",
+  ],
+  // Bedrooms: [
+  //   "/assets/pictures/bedroom1.jpg",
+  //   "/assets/pictures/bedroom2.jpg",
+  //   "/assets/pictures/bedroom3.jpg",
+  // ],
+  // Outdoors: [
+  //   "/assets/pictures/outdoor1.jpg",
+  //   "/assets/pictures/outdoor2.jpg",
+  //   "/assets/pictures/outdoor3.jpg",
+  // ],
+};
+
 export default function Gallery() {
-  const imageGroups = chunkImages(images);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <div className="main-container">
       <h1 className="heading">Our Work</h1>
 
-      {imageGroups.map((group, idx) => (
-        <div className="image-section" key={idx}>
-          {group.map((src, subIdx) => (
-            <img
-              key={subIdx}
-              src={src}
-              alt={`Project ${idx + 1}.${subIdx + 1}`}
-              className={subIdx === 0 ? "big-image" : "small-image"}
-              loading="lazy"
-              onClick={() => setSelectedImage(src)}
-            />
-          ))}
-        </div>
-      ))}
+      {Object.entries(categorizedImages).map(([category, images]) => {
+        const chunks = chunkImages(images);
+
+        return (
+          <div className="category-block" key={category}>
+            <h1 className="category-block-title">{category}</h1>
+            <div className="scroll-row">
+              {chunks.map((chunk, i) => (
+                <div className="image-section" key={i}>
+                  <img
+                    src={chunk[0]}
+                    alt={`${category} ${i + 1}.1`}
+                    className="big-image"
+                    onClick={() => setSelectedImage(chunk[0])}
+                  />
+                  <div className="right-column">
+                    {chunk[1] && (
+                      <img
+                        src={chunk[1]}
+                        alt={`${category} ${i + 1}.2`}
+                        onClick={() => setSelectedImage(chunk[1])}
+                      />
+                    )}
+                    {chunk[2] && (
+                      <img
+                        src={chunk[2]}
+                        alt={`${category} ${i + 1}.3`}
+                        onClick={() => setSelectedImage(chunk[2])}
+                      />
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
 
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
