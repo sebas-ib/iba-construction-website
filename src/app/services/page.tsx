@@ -101,10 +101,7 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img
-              src="/assets/pictures/outdoor-remodeling.jpeg"
-              alt="Remodeling"
-            />
+            <img src="/assets/pictures/kitchen.jpg" alt="Remodeling" />
           </div>
         </div>
 
