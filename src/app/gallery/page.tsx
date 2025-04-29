@@ -13,7 +13,11 @@ function chunkImages(images: string[]) {
 
 // Categorized image data
 const categorizedImages: { [category: string]: string[] } = {
-  Kitchens: ["/assets/pictures/kitchen.jpg"],
+  Kitchens: [
+    "/assets/pictures/kitchen.jpg",
+    "/assets/pictures/kitchen2.jpeg",
+    "/assets/pictures/kitchen3.jpeg",
+  ],
   Livingrooms: [
     "/assets/pictures/living_room.jpg",
     "/assets/pictures/living_room2.jpg",
@@ -22,6 +26,9 @@ const categorizedImages: { [category: string]: string[] } = {
   Bathrooms: [
     "/assets/pictures/bathroom.jpg",
     "/assets/pictures/bathroom2.jpg",
+    "/assets/pictures/bathroom3.jpeg",
+    "/assets/pictures/bathroom4.jpeg",
+    "/assets/pictures/bathroom5.jpeg",
   ],
   // Bedrooms: [
   //   "/assets/pictures/bedroom1.jpg",

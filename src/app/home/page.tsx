@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className="service-item">
             <img
-              src="/assets/pictures/bathroom2.jpg"
+              src="/assets/pictures/outdoor_remodeling.jpeg"
               alt="Remodeling"
               className="service-img"
             />
