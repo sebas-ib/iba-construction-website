@@ -96,12 +96,24 @@ export default function Gallery() {
 
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
-          <Image
-            src={selectedImage}
-            alt="Full size preview"
-            width={1600}
-            height={1200}
-          />
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="close-button"
+              aria-label="Close full-size view"
+              onClick={() => setSelectedImage(null)}
+            >
+              ×
+            </button>
+            <Image
+              src={selectedImage}
+              alt="Full size preview"
+              className="modal-image"
+              width={1600}
+              height={1200}
+              sizes="90vw"
+              priority
+            />
+          </div>
         </div>
       )}
     </div>
