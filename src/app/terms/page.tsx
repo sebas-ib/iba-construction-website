@@ -1,12 +1,18 @@
+import Image from "next/image";
+
 import "../legal-pages.css";
 
 export default function TermsOfService() {
   return (
     <div className="legal-page">
       <div className="legal-hero">
-        <img
+        <Image
           src="/assets/pictures/night-picture.jpg"
           alt="Elegant modern home at dusk"
+          fill
+          priority
+          sizes="100vw"
+          className="legal-hero-image"
         />
         <div className="legal-title-card">
           <p className="eyebrow">Terms of Service</p>

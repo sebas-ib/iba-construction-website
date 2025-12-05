@@ -1,12 +1,17 @@
+import Image from "next/image";
 import "../legal-pages.css";
 
 export default function PrivacyPolicy() {
   return (
     <div className="legal-page">
       <div className="legal-hero">
-        <img
+        <Image
           src="/assets/pictures/living_room.jpg"
           alt="Sunlit living room interior"
+          fill
+          priority
+          sizes="100vw"
+          className="legal-hero-image"
         />
         <div className="legal-title-card">
           <p className="eyebrow">Privacy Policy</p>
