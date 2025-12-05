@@ -57,9 +57,9 @@ export default function PrivacyPolicy() {
         <p>
           IBA Construction
           <br />
-          📞 (858) 527-8989
+          (858) 527-8989
           <br />
-          📧 ibaconstruction23@gmail.com
+          ibaconstruction23@gmail.com
           <br />
           License #1092544
         </p>
