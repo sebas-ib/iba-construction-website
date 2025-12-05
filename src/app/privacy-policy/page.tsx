@@ -1,17 +1,21 @@
-import "./privacy-policy.css";
+import "../legal-pages.css";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="policy-page">
-      {/* <div className="hero-section">
-        <img src="/assets/privacy.jpg" alt="Privacy" />
-        <div className="title-card">
-          <h1 className="header">Privacy Policy</h1>
-          <p>How we handle your personal information with care.</p>
+    <div className="legal-page">
+      <div className="legal-hero">
+        <img
+          src="/assets/pictures/living_room.jpg"
+          alt="Sunlit living room interior"
+        />
+        <div className="legal-title-card">
+          <p className="eyebrow">Privacy Policy</p>
+          <h1>How we protect and respect your personal information.</h1>
+          <p>Transparent data practices you can trust.</p>
         </div>
-      </div> */}
+      </div>
 
-      <div className="content-section">
+      <div className="legal-content">
         <h2>Effective Date: March 28, 2025</h2>
 
         <h3>1. Information We Collect</h3>

@@ -1,4 +1,5 @@
 import "./about.css";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -6,9 +7,12 @@ export default function About() {
     <div className="about">
       {/* Hero Section — as-is */}
       <div className="hero-section">
-        <img
+        <Image
           src="/assets/pictures/new_construction.jpg"
           alt="New construction framing"
+          width={1920}
+          height={1080}
+          priority
         />
 
         <div className="title-card">
@@ -38,10 +42,12 @@ export default function About() {
             </p>
           </div>
           <div className="right-side">
-            <img
+            <Image
               src="/assets/pictures/outdoor_painting.jpeg"
               alt="Exterior painting in progress"
               className="section-image"
+              width={1200}
+              height={800}
             />
           </div>
         </div>
@@ -54,19 +60,23 @@ export default function About() {
         <div className="our-values-box">
           <div className="values-container">
             <div className="value-item">
-              <img
+              <Image
                 src="/assets/icons/integrity.png"
                 alt="Integrity"
                 className="icon-image"
+                width={80}
+                height={80}
               />
               <h4>Integrity</h4>
               <p>We maintain honesty and transparency in everything we do.</p>
             </div>
             <div className="value-item">
-              <img
+              <Image
                 src="/assets/icons/quality.png"
                 alt="Quality"
                 className="icon-image"
+                width={80}
+                height={80}
               />
               <h4>Quality</h4>
               <p>
@@ -75,10 +85,12 @@ export default function About() {
               </p>
             </div>
             <div className="value-item">
-              <img
+              <Image
                 src="/assets/icons/satisfaction.png"
                 alt="Customer Satisfaction"
                 className="icon-image"
+                width={80}
+                height={80}
               />
               <h4>Customer Satisfaction</h4>
               <p>

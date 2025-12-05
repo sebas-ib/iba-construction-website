@@ -1,11 +1,18 @@
 import "./home.css";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="home">
       <div className="hero-section">
-        <img src="/assets/pictures/living_room.jpg" alt="Living room" />
+        <Image
+          src="/assets/pictures/living_room.jpg"
+          alt="Living room"
+          width={1920}
+          height={1080}
+          priority
+        />
 
         <div className="title-card">
           <h1 className="header">Excellence in Every Build</h1>
@@ -21,10 +28,12 @@ export default function Home() {
 
         <div className="service-container">
           <div className="service-item">
-            <img
+            <Image
               src="/assets/pictures/night-picture.jpg"
               alt="New Construction"
               className="service-img"
+              width={1200}
+              height={800}
             />
             <div className="service-info">
               <h4>New Construction</h4>
@@ -33,10 +42,12 @@ export default function Home() {
           </div>
 
           <div className="service-item">
-            <img
+            <Image
               src="/assets/pictures/remodeling.jpg"
               alt="Additions"
               className="service-img"
+              width={1200}
+              height={800}
             />
             <div className="service-info">
               <h4>Additions</h4>
@@ -45,10 +56,12 @@ export default function Home() {
           </div>
 
           <div className="service-item">
-            <img
+            <Image
               src="/assets/pictures/outdoor_remodeling.jpeg"
               alt="Remodeling"
               className="service-img"
+              width={1200}
+              height={800}
             />
             <div className="service-info">
               <h4>Remodeling</h4>
@@ -57,10 +70,12 @@ export default function Home() {
           </div>
 
           <div className="service-item">
-            <img
+            <Image
               src="/assets/pictures/water-damage.jpg"
               alt="Water Damage Repairs"
               className="service-img"
+              width={1200}
+              height={800}
             />
             <div className="service-info">
               <h4>Water Damage Repairs</h4>
@@ -83,10 +98,12 @@ export default function Home() {
         </div>
 
         <div className="area-right">
-          <img
+          <Image
             src="/assets/pictures/san-diego.jpg"
             alt="san diego skyline"
             className="service-img"
+            width={1200}
+            height={800}
           />
         </div>
       </div>

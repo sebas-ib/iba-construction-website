@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import "./gallery.css";
 
 // Group images into sets of [big, small1, small2]
@@ -58,25 +59,31 @@ export default function Gallery() {
             <div className="scroll-row">
               {chunks.map((chunk, i) => (
                 <div className="image-section" key={i}>
-                  <img
+                  <Image
                     src={chunk[0]}
                     alt={`${category} ${i + 1}.1`}
                     className="big-image"
                     onClick={() => setSelectedImage(chunk[0])}
+                    width={1200}
+                    height={900}
                   />
                   <div className="right-column">
                     {chunk[1] && (
-                      <img
+                      <Image
                         src={chunk[1]}
                         alt={`${category} ${i + 1}.2`}
                         onClick={() => setSelectedImage(chunk[1])}
+                        width={600}
+                        height={450}
                       />
                     )}
                     {chunk[2] && (
-                      <img
+                      <Image
                         src={chunk[2]}
                         alt={`${category} ${i + 1}.3`}
                         onClick={() => setSelectedImage(chunk[2])}
+                        width={600}
+                        height={450}
                       />
                     )}
                   </div>
@@ -89,7 +96,12 @@ export default function Gallery() {
 
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
-          <img src={selectedImage} alt="Full size preview" />
+          <Image
+            src={selectedImage}
+            alt="Full size preview"
+            width={1600}
+            height={1200}
+          />
         </div>
       )}
     </div>

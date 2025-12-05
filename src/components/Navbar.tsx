@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
@@ -15,10 +16,13 @@ function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <Link href="/">
-          <img
+          <Image
             src="/assets/icons/iba-logo-cropped.png"
             alt="Our team working on a site"
             className={`${styles.logoImage}`}
+            width={200}
+            height={60}
+            priority
           />
         </Link>
       </div>

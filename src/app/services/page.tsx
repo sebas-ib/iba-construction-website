@@ -1,4 +1,5 @@
 import "./services.css";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Services() {
@@ -6,7 +7,13 @@ export default function Services() {
     <div className="services-page">
       {/* Hero Section */}
       <div className="hero-section">
-        <img src="/assets/pictures/pp-home.jpg" alt="Modern home build" />
+        <Image
+          src="/assets/pictures/pp-home.jpg"
+          alt="Modern home build"
+          width={1920}
+          height={1080}
+          priority
+        />
         <div className="title-card">
           <h1 className="header">Our Services</h1>
           <p>
@@ -43,9 +50,11 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img
+            <Image
               src="/assets/pictures/construction.jpg"
               alt="New construction"
+              width={1400}
+              height={900}
             />
           </div>
         </div>
@@ -70,7 +79,12 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/assets/pictures/living_room2.jpg" alt="Home addition" />
+            <Image
+              src="/assets/pictures/living_room2.jpg"
+              alt="Home addition"
+              width={1400}
+              height={900}
+            />
           </div>
         </div>
 
@@ -98,7 +112,12 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/assets/pictures/kitchen.jpg" alt="Remodeling" />
+            <Image
+              src="/assets/pictures/kitchen.jpg"
+              alt="Remodeling"
+              width={1400}
+              height={900}
+            />
           </div>
         </div>
 
@@ -125,9 +144,11 @@ export default function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img
+            <Image
               src="/assets/pictures/water-damage.jpg"
               alt="Water damage repairs"
+              width={1400}
+              height={900}
             />
           </div>
         </div>

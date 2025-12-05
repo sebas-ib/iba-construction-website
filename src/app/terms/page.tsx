@@ -1,17 +1,21 @@
-import "./terms.css";
+import "../legal-pages.css";
 
 export default function TermsOfService() {
   return (
-    <div className="terms-page">
-      {/* <div className="hero-section">
-        <img src="/assets/terms.jpg" alt="Terms of Service" />
-        <div className="title-card">
-          <h1 className="header">Terms of Service</h1>
-          <p>Know your rights and responsibilities when using our site.</p>
+    <div className="legal-page">
+      <div className="legal-hero">
+        <img
+          src="/assets/pictures/night-picture.jpg"
+          alt="Elegant modern home at dusk"
+        />
+        <div className="legal-title-card">
+          <p className="eyebrow">Terms of Service</p>
+          <h1>Know your rights and responsibilities when using our site.</h1>
+          <p>Clear expectations that keep your experience smooth and secure.</p>
         </div>
-      </div> */}
+      </div>
 
-      <div className="content-section">
+      <div className="legal-content">
         <h2>Effective Date: March 28, 2025</h2>
 
         <h3>1. Use of the Website</h3>
