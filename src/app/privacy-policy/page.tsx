@@ -21,9 +21,7 @@ export default function PrivacyPolicy() {
         <h3>1. Information We Collect</h3>
         <p>
           When you fill out our contact form, we collect your name, email
-          address, and any message or information you submit. We may also
-          automatically collect technical data such as IP address and browser
-          information through analytics tools.
+          address, and any message or information you submit.
         </p>
 
         <h3>2. How We Use Your Information</h3>
