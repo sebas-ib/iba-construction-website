@@ -121,7 +121,7 @@ export default function Services() {
               secure again.
             </p>
             <p>
-              <i>Do&apos;nt just repair damage—rebuild with confidence.</i>
+              <i>Don&apos;t just repair damage—rebuild with confidence.</i>
             </p>
           </div>
           <div className="service-image">

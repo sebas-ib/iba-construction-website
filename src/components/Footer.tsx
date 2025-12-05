@@ -53,7 +53,7 @@ function Footer() {
         </p>
         <nav className={styles["nav-links"]}>
           <Link href="/privacy-policy">Privacy Policy</Link>
-          <a>|</a>
+          <span aria-hidden="true">|</span>
           <Link href="/terms">Terms of Service</Link>
         </nav>
       </div>
